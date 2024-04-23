@@ -51,6 +51,9 @@
 // let slicedFruits = fruits.slice(0,2);
 // console.log(slicedFruits);
 
+
+// forEach 제외하고 모두 return문이 필요하다.
+
 // (1) forEach
 // let numbers = [3, 2, 1, 2, 1];
 
@@ -67,12 +70,21 @@
 
 // console.log(newNumbers);
 
-// (3) map
-let numbers = [3, 2, 1, 2, 1];
+// (3) filter
+// let numbers = [3, 2, 1, 2, 1];
 
-let filteredNumbers = numbers.filter(function(item){
+// let filteredNumbers = numbers.filter(function(item){
 
-    return item === 2;
-});
+//     return item > 2;
+// });
 
-console.log(filteredNumbers);
+// console.log(filteredNumbers);
+
+// (4) find
+let numbers = [4, 1, 5, 4, 5];
+
+let result = numbers.find(function(item){
+    return item > 3;
+})
+
+console.log(result);
